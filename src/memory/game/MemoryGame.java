@@ -12,6 +12,9 @@ package memory.game;
  */
 public class MemoryGame {
 
+  private Grid grid;
+  private int score;
+  
     /**
      * @param args the command line arguments
      */
