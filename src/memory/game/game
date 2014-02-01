@@ -1,0 +1,39 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package memory.game;
+
+/**
+ *
+ * @author Airwad NEW COMPY
+ */
+public class game {
+
+    public int percentageofwins (int wins, int lost, int tied){
+        int gamesPlayed = 0;
+        
+        if (wins<0){
+            percentageofwins = -100;
+            System.out.println ("invalid number of wins");
+            return percentageofwins;
+        }
+        else if (lost<0) {
+            percentageofwins = -100;
+            System.out.println("invalid number of losses");
+        }
+    else if (tied<0) {
+            percentageofwins = -100;
+            System.out.println("invalid number of ties");
+    }
+    else {
+        if (gamesPlayed==0){
+   System.out.println("you have no games played");
+   return percentageofwins;
+        }
+        else percentageofwins = (wins/gamesPlayed)*100;
+        return percentageofwins}
+    
+              
